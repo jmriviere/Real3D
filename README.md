@@ -25,10 +25,10 @@ By default the program loads a phong shader. Different shaders and reflectance m
 
 ###CMake
 Use the usual:
-mkdir build
-cd build
-cmake ..
-make && make install
+    mkdir build
+    cd build
+    cmake ..
+    make && make install
 
 If all went well, you should now have a folder named bin in at the root of the project containing the executable files and necessary folders (shaders/off).
 

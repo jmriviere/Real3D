@@ -61,3 +61,6 @@ install(TARGETS Real3D DESTINATION ./bin)
 add_custom_command(TARGET Real3D PRE_BUILD
                    COMMAND ${CMAKE_COMMAND} -E copy_directory
                    ${CMAKE_SOURCE_DIR}/shaders ${CMAKE_INSTALL_PREFIX}/bin/shaders)
+add_custom_command(TARGET Real3D PRE_BUILD
+                   COMMAND ${CMAKE_COMMAND} -E copy_directory
+                   ${CMAKE_SOURCE_DIR}/off ${CMAKE_INSTALL_PREFIX}/bin/off)
