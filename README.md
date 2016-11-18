@@ -12,14 +12,25 @@ This program has been compiled and tested both on Windows and Linux environments
 It requires the following libraries/API in order to compile :
 
 * OpenGL 4.0 and GLEW (tested with version 1.13.0)
-* OpenCV (tested with version 2.4.11)
-* Qt (tested with version 5.4)
+  * Note: The shaders were specifically written for OpenGL and have no fallback for earlier versions. It may or may not work with earlier versions of GL (untested)
+* OpenCV (tested with version 2.4.10, 2.4.11)
+* Qt (tested with version 4.8.6, 5.4)
 
 A "Real3D.pro" file is provided for compilation with QtCreator IDE. Please update the libraries paths to match your installation.
+
 
 ###Installation
 Please copy the "shaders" and "off" folders in the same directory where the program is compiled.
 By default the program loads a phong shader. Different shaders and reflectance maps can be loaded from the user interface.
+
+###CMake
+Use the usual:
+mkdir build
+cd build
+cmake ..
+make && make install
+
+If all went well, you should now have a folder named bin in at the root of the project containing the executable files and necessary folders (shaders/off).
 
 ####Environment mapping
 For the environment mapping to work you will have to download the **latitude longitude maps** of the environment.
