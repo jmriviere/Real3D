@@ -24,11 +24,11 @@ Please copy the "shaders" and "off" folders in the same directory where the prog
 By default the program loads a phong shader. Different shaders and reflectance maps can be loaded from the user interface.
 
 ###CMake
-Use the usual:
-    mkdir build
-    cd build
-    cmake ..
-    make && make install
+Use the usual:  
+    mkdir build  
+    cd build  
+    cmake ..  
+    make && make install  
 
 If all went well, you should now have a folder named bin in at the root of the project containing the executable files and necessary folders (shaders/off).
 
