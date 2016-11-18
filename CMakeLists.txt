@@ -8,7 +8,7 @@ set(CMAKE_INSTALL_PREFIX ..)
 # Auto-generating functions write their headers into the build directory.
 # Hence the build directory should be included.
 set( CMAKE_INCLUDE_CURRENT_DIR ON )
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ./cmake)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
 
 file(GLOB SRC
   "*.cpp"
