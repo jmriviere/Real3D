@@ -1,3 +1,7 @@
+#Folders
+bin/
+build/
+
 # Compiled Object files
 *.slo
 *.lo
